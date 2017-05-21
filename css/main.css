@@ -1,0 +1,45 @@
+body{
+	text-align: center;
+}
+.box{
+	display: inline block; 
+	height: 200px;
+	width:45%;
+}
+
+.red{
+	background-color: red;
+}
+.pink{
+	background-color: pink;
+
+}
+.brown{
+	background-color: brown;
+}
+
+.purple{
+	background-color: purple; 
+}
+
+@media(max-width:600px){
+	body{
+		text-align: left;
+	}
+	.box {
+		display: block;
+	}
+	.pink{
+		display: none;
+	}
+	.brown{
+		display: none
+	}
+}
+@media(min-width:1000px){
+	.box{
+		display: block;
+		width: 100%;
+		height: 200px;
+	}
+}	
